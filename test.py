@@ -4,7 +4,7 @@ from cvzone.ClassificationModule import Classifier
 import numpy as np
 import math
 
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 detector = HandDetector(maxHands=1)
 classifier = Classifier("Model/keras_model.h5" , "Model/labels.txt")
 offset = 20
